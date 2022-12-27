@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <h2>Tente abrir essas imagens em varios dispositivos diferentes ou simplesmente reaguste o tamanho do seu navegador</h2>
+
+    <picture>
+        <source media="(min-width: )" srcset="" type="image/">
+        <source media="(max-width: 750px)" srcset="public/images/fotop.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="public/images/fotom.png" type="image/png">
+        <img src="public/images/fotog.png" alt="Imagen Flexível">
+    </picture>
+
+    <h1>Reproduzir audios</h1>
+    <audio src="public/audio/oh-christimas-tree.mp3" controls autoplay></audio>
+
+    <h2>Reproduzir audios mais coisado</h2>
+    <audio>
+        <source src="public/audio/ticklish.mp3" type="media/mpeg">
+        <source src="public/audio/oh-christimas-tree.ogg" type="media/ogg">
+        <source src="public/audio/ticklish.wav" type="media/wav">
+    </audio>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias</title>
+</head>
+<body>
+    <h1>Adicionar audios</h1>
+    <h2>Use a tag &ltaudio&gt</h2>
+    <audio src="public/audio/ticklish.mp3"></audio>
+    <h2>Tags extras</h2>
+    <p>autoplay: Toca o audio automaticamente</p>
+    <p>controls: Adiciona controle de audio tais como play, volume e timeline</p>
+
+    <h1>Adicionar varios tipos de audio do mesmo</h1>
+    <audio autoplay controls loop>
+        <source src="public/audio/ticklish.mp3" type="media/mpeg">
+        <source src="public/audio/ticklish.mp3" type="media/mpeg">
+        <source src="public/audio/ticklish.mp3" type="media/mpeg">
+        <p>Não deu pra coisar a musica. Baixa ela ai: <a href="public/audio/ticklish.mp3">Baixar</a></p>
+    </audio>
+
+    <h1>Tutorial</h1>
+    <p>1 - Adicionae a tag &ltaudio&gt</p>
+    <p>2 - Coloque o caminho do audio</p>
+    <p>3 - Adicione (ou nao) as tags adicionais: controls</p>
+
+    <h2>Segunda forma</h2>
+    <p>1 - Adicione a tag &ltaudio&gt e tire o src</p>
+    <p>2 - Adicione a tag source:src</p>
+    <p>3 - Aponte o local do audio e o tipo dele exemplo 'media/mpeg'</p>
+    <p>4 - Adicione outras tags source:src abaixo como segundas opcoes</p>
+    <p>5 - É recomendado alguma mensagem no fim caso o arquivo nao esteja disponivel ou só não pode reproduzir</p>
+</body>
+</html>

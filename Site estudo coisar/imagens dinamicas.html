@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinamicas</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <h2>Tag Picture</h2>
+    <p>É uma tag que permite mostrar imagens de varias fontes diferentes</p>
+
+    <h2>source:media:type</h2>
+    <p>media="(max-width: )" = tamanho maximo antes de mudar pra imagem menor</p>
+    <p>srcset="" = diretorio da imagem</p>
+    <p>type="image/" = tipoe da imagem</p>
+
+    <h1>Tutorial</h1>
+    <p>1 - Crie uma tag picture</p>
+    <p>2 - Dentro crie uma tag img</p>
+    <p>2.1 - coloque a maior imagem nela</p></p>
+    <p>3 - Acima da img crie uma tag source:media:type</p>
+    <p>3.1 - Em <i>media="(max-width: )"</i> coloque o tamanho da maior imagem + 50px</p>
+    <p>3.2 - Configure o caminho da imagem e o tipo dela</p>
+    <p>4 - Crie outra tag <i>source:media:type em cima dessa primeira criada (de modo q a ultima esteja smepre em cima)</i></p>
+    <p>5. - Repita os passos 3.1 e 3.2</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="public/images/fotop.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="public/images/fotom.png" type="image/png">
+        <img src="public/images/fotog.png" alt="Foto Mexivel">
+    </picture>
+</body>
+</html>
