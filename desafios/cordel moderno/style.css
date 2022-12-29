@@ -20,6 +20,7 @@ header {
     background-color: black;
     color: white;
 
+    min-height: 169px;
     height: 269px;
     text-align: center;
 
@@ -39,14 +40,13 @@ header {
         position: absolute;
 
         left: 50%;
-        top: 50%;
+        top: 30%;
 
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -30%);
     }
 
     header p {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 
         position: absolute;
 
@@ -84,12 +84,12 @@ section#b, #d {
 }
 
 section#b {
-    background: black url('public/images/background001.jpg') no-repeat fixed;
+    background: black url('public/images/background001.jpg') right center no-repeat fixed;
     background-size: cover;
 }
 
 section#d {
-    background: black url('public/images/background002.jpg') no-repeat fixed;
+    background: black url('public/images/background002.jpg') right center no-repeat fixed;
     background-size: cover;
 }
 
