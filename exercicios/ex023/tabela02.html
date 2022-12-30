@@ -13,6 +13,7 @@
         table {
             border-collapse: collapse;
             width: 600px;
+            position: relative;
         }
 
         caption {
@@ -24,6 +25,17 @@
             border-bottom: 0px;
         }
 
+        thead , tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+
         tbody > tr:nth-child(2n) {
             background-color: lightgray;
         }
@@ -33,9 +45,8 @@
             padding: 6px 10px;
         }
 
-        thead , tfoot{
-            background-color: gray;
-            color: white;
+        tr:hover {
+            border: 2px solid black;
         }
 
         td.number {
