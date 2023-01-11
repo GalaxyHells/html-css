@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="" method="post">
+        <p>
+            <label for="">ano</label>
+            <input type="number" name="idade" id="iidade" min="1900" max="2022" oninput="CalcularIdade()">
+        </p>
+
+        <p>
+            <label for="isuaidade">Sua idade</label>
+            <output id="isuaidade">0</output>
+        </p>
+
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset" isuaidade="isoma.innerHTML = '0'">Limpar</button>
+        </p>
+    </form>
+
+    <script>
+        function CalcularIdade() {
+            let atual = new Date().getFullYear()
+            isuaidade.innerHTML = atual - Number(iidade.value)
+        }
+    </script>
+</body>
+</html>
