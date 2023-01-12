@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/media-query.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body>
+<body onresize="sizeChanged()">
     <header>
         <h1>Nome do Site</h1>
 
@@ -44,6 +44,17 @@
     </footer>
 
     <script>
+        function sizeChanged() {
+            if (window.innerWidth >= 768)
+            {
+                items.style.display = 'block'
+            }
+            else
+            {
+                items.style.display = 'none'
+            }
+        }
+
         function clickMenu() {
             if (items.style.display == 'none')
             {
