@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/* Media Query */
+
+@media screen and (min-width: 768px) { /* TABLET */
+    main {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 992px) { /* DESKTOP */
+    main {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1200px) { /* TV */
+    main {
+        width: 60%;
+    }
+}
