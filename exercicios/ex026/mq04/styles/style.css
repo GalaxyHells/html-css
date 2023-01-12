@@ -6,12 +6,11 @@
     margin: 0px;
     padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.3em;
     box-sizing: border-box;
+    font-size: 1.2em;
 }
 
 body, html {
-    width: 100vw;
     height: 100vh;
 }
 
@@ -19,6 +18,7 @@ body {
     background: black url(../public/images/back-phone.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
 }
 
     main {
@@ -29,7 +29,16 @@ body {
     }
 
         h1 {
-            text-align: center;            
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1em;
+            text-align: center;
+        }
+
+        h2::before {
+            content: "Versão Smartphone";
         }
 
         img {
@@ -40,5 +49,5 @@ body {
         img#smartphone { display: block; }
         img#pc { display: none; }
         img#print { display: none; }
-        img#impressora { display: none; }
+        img#tablet { display: none; }
         img#tv { display: none; }
