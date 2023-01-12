@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/* Configurações Gerais (Mobile First) */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    background-color: rgb(151, 151, 151);
+}
+
+header {
+    background-color: gray;
+}
+
+    header h1 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    span#menu {
+        background-color: rgb(49, 49, 49);
+        display: block;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        
+    }
+
+        span#menu:hover {
+            background-color: rgb(73, 73, 73);
+        }
+
+    nav {
+        display: none;
+        text-align: center;
+    }
+
+        nav ul {
+            list-style-type: none;
+        }
+            nav li {
+                background-color: rgb(85, 85, 85);
+                color: white;
+
+            }
+
+                nav ul li a {
+                    text-decoration: none;
+                    color: white;
+                    padding: 13px;
+                    display: block;
+                    border-bottom: 1px rgba(0, 0, 0, 0.200) solid;
+                }
+
+                nav ul li a:hover {
+                    background-color: rgb(114, 114, 114);
+                }
+
+                
+
+main {
+    background-color: white;
+    border-radius: 10px;
+
+    margin: auto;
+    margin-top: 15px;
+    width: 90%;
+    padding: 10px;
+}
+
+    h1 {
+        padding: 0px 0px 10px 0px;
+    }
+
+    p {
+        text-indent: 20px;
+        padding-bottom: 15px;
+        line-height: 20px;
+        text-align: justify;
+    }
