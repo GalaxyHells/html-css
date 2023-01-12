@@ -1,3 +1,108 @@
 @charset "UTF-8";
 
 /* Todas as midias */
+
+/* Typical Device Brekpoints
+----------------------------
+Pequenas telas: até 600px
+Celular: 601px até 768px
+Tablet: 769px até 992px
+Desktop: 993px até 1200px
+TV/Grandes telas: acima 1201px
+*/
+
+@media print {
+    body {
+        background-image: url(../public/images/icon-print.png); /* DESNECESSÁRIO, NÂO FUNCIONA BACK */
+    }
+
+        main {
+            width: 80%;
+            border: 2px solid black;
+        }
+
+            main h1 {
+                font-family: 'Times New Roman', Times, serif;
+                text-shadow: none;
+                color: black;
+            }
+
+            img#smartphone { display: none; }
+            img#tablet { display: none; }
+            img#pc { display: none; }
+            img#tv { display: none; }
+            img#print { display: block; }
+}
+
+@media screen and (min-width: 768px) { /* Tablet */
+    body {
+        /*background: url(../public/images/back-tablet.jpg) no-repeat;*/
+        background-image: url(../public/images/back-tablet.jpg);
+    }
+
+        main {
+            width: 80%;
+        }
+
+        h1 {
+            font-size: 1.2em;
+        }
+
+        h2::before {
+            content: "Versão Tablet";
+        }
+
+        img#smartphone { display: none; }
+        img#tablet { display: block; }
+        img#pc { display: none; }
+        img#tv { display: none; }
+        img#print { display: none; }
+}
+
+@media screen and (min-width: 992px) { /* Desktop */
+    body {
+        background-image: url(../public/images/back-pc.jpg);
+    }
+
+        main {
+            width: 70%;
+        }
+
+        h1 {
+            font-size: 1.1em;
+        }
+
+        h2::before {
+            content: "Versão Desktop";
+        }
+
+        img#smartphone { display: none; }
+        img#tablet { display: none; }
+        img#pc { display: block; }
+        img#tv { display: none; }
+        img#print { display: none; }
+}
+
+@media screen and (min-width: 1200px) { /* TV/Tela grande */
+    body {
+        background-image: url(../public/images/back-tv.jpg);
+    }
+
+        main {
+            width: 60%;
+        }
+
+        h1 {
+            font-size: 1em;
+        }
+
+        h2::before {
+            content: "Versão TV";
+        }
+
+        img#smartphone { display: none; }
+        img#tablet { display: none; }
+        img#pc { display: none; }
+        img#tv { display: block; }
+        img#print { display: none; }
+}
